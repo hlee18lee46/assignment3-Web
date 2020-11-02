@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+
+<nav>
+  <ul id = "ulDefault">
+    <li id = "liDefault"><a href="index.html">Home</a></li>
+    <li id = "liDefault"><a href="master.html">Master</a></li>
+    <li id = "liDefault"><strong>Details</strong></li>
+    <li id = "liDefault"><a href="aboutus.html">About Us</a></li>
+  </ul>
+</nav>
+<h1 align="center">Details</h1>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p><strong>Note:</strong> The geolocation property is not supported in IE8 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+Data API??
+https://api.nal.usda.gov/fdc/v1/food/rXbIaIXxAxzqrHhQ0z7OGc6pxXq2531RUgHlBSPx?api_key=DEMO_KEY
+https://api.nal.usda.gov/fdc/v1/foods/search?api_key=DEMO_KEY&query=Cheddar%20Cheese
+
+
+</body>
+<footer>
+  <p3>Email to: <a href="mailto:someone@example.com">lee46@usf.edu</a>.</p3>
+</footer>
+</html>

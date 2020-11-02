@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <link rel="stylesheet" type="text/css" href="css/page.css">
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+
+
+<nav>
+  <ul id = "ulDefault">
+    <li id = "liDefault"><a href="index.html">Home</a></li>
+    <li id = "liDefault"><strong>Master</strong></li>
+    <li id = "liDefault"><a href="detail.html">Details</a></li>
+    <li id = "liDefault"><a href="aboutus.html">About Us</a></li>
+  </ul>
+</nav>
+<h1 align="center">Google Map</h1>
+<script>
+  function initMap(){
+    var options = {
+      zoom:8,
+      center:{lat:42.3601, lng: -71.0589}
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), options);
+  }
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC3Vwlz6nqsD0YS3e127ymTI6TUH3abJw&callback=initMap"
+type="text/javascript"></script>
+<style>
+#map{
+  height:400px;
+  width:100%;
+}
+</style>
+<div id = "map"></div>
+
+
+
+</body>
+<footer>
+  <p3>Email to: <a href="mailto:someone@example.com">lee46@usf.edu</a>.</p3>
+</footer>
+</html>

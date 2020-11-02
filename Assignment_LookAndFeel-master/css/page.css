@@ -1,0 +1,82 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+h2 {
+  color: blue;
+
+}
+
+p {
+color: red;
+text-decoration: underline;
+}
+
+p1{
+
+}
+
+p2{
+color: gray;
+}
+p3{
+  font-family: "Times New Roman";
+}
+
+p4{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+
+#img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imgTravel{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width = "300";
+  height = "300";
+
+}
+
+#ulDefault {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+text-align: center;
+}
+
+#liDefault {
+  display: inline;
+}
+
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}

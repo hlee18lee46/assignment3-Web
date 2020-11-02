@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="css/page.css">
+<link rel="stylesheet" type="text/css" href="css/table.css">
+<nav>
+  <ul id = "ulDefault">
+    <li id = "liDefault"><strong>Home</strong></li>
+    <li id = "liDefault"><a href="master.html">Master</a></li>
+    <li id = "liDefault"><a href="detail.html">Details</a></li>
+    <li id = "liDefault"><a href="aboutus.html">About Us</a></li>
+  </ul>
+</nav>
+<img id = img align="center" src="img/usf-logo-png-2.png" alt="logo" width="20%" height="150">
+<h1 id = myname align="center">ISM 6225 Assignment 3</h1>
+
+
+
+</div>
+
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+
+<canvas id = "barchartexample" width = "300" height = "150"></canvas>
+<script>
+new Chart(document.getElementById("barchartexample"), {
+  type: 'bar',
+  data: {
+    labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+    datasets: [
+      {
+        label: "Population (millions)",
+        backgroundColor: ["#3e95cd", "8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+        data: [2478, 5267, 734, 784, 433]
+      }
+    ]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: 'Predicted world population (millions) in 2050'
+    }
+  }
+});
+</script>
+
+
+<div>
+
+</p1>
+</div>
+<br>
+<br>
+
+
+
+</body>
+<footer>
+  <p3>Contact information: <a href="mailto:someone@example.com">lee46@usf.edu</a>.</p3>
+</footer>
+</html>
